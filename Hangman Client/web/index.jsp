@@ -14,6 +14,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Hangman</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     
     <body>
@@ -39,6 +40,5 @@
         <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/javascript.js" type="text/javascript"></script>
-        
     </body>
 </html>
