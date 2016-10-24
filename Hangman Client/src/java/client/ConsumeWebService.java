@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.List;
 import org.json.*;
 
 
@@ -30,7 +32,7 @@ public class ConsumeWebService {
 
         return word;
     }
-    
+        
     private String getUrlContents(String theUrl) {
         StringBuilder content = new StringBuilder();
 
@@ -59,4 +61,21 @@ public class ConsumeWebService {
         return content.toString();
         
     }
+    
+    public ArrayList checkWord(String word, String letter) {
+        
+        ArrayList<String> strList = new ArrayList<String>();
+
+
+        int index = word.indexOf(letter);
+        while (index >= 0) {  // indexOf returns -1 if no match found
+            System.out.println(index);
+            strList.add(index + "");
+            index = word.indexOf(letter, index + 1);
+        }
+        
+        return strList;
+
+    }
+
 }
