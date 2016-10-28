@@ -2,17 +2,16 @@
      /*background-color: #f6f1ff;*/
  /*}*/
 
-.jumbotron{
+.titlediv{
     background-color: #337ab7;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: -20px;
 
 }
 
-.jumbotron > h1{
+.titlediv > h1{
     color: white;
-    height: 50px;
-    /*padding-top: 0px;*/
-    /*padding-bottom: 0px;*/
-
 }
 
 #wordSpaces > div{
@@ -24,8 +23,16 @@
     font-size:x-large;
 }
 
+.center-letters{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
 
 
 .card {

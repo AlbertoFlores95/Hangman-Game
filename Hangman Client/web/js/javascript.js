@@ -25,7 +25,7 @@ $(document).ready(function () {
                 for (var a = 0; a < length; a++) {
 
                     var strID = "wordSpace" + a;
-                    $("#wordSpaces").append("<div class='col-lg-1 center-block' id='" + strID + "'></div>");
+                    $("#wordSpaces").append("<div class='col-lg-1 col-sm-1 text-center' id='" + strID + "'></div>");
 
                     $("#" + strID).html("<p class='text-center' style='color: white;'>_</p>");
 
@@ -64,6 +64,7 @@ $(document).ready(function () {
 
         $(this).removeClass("btn-default");
         $(this).addClass("disabled");
+        $(this).attr('disabled','true');
 
        $.cookie("attempt",letter);
 
