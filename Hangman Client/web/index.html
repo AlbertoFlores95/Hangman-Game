@@ -1,0 +1,94 @@
+<html>
+<head>
+
+    <title>Hangman</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="css/glyphycon-rotate.css" rel="stylesheet" type="text/css"/>
+    <link href="css/material-card.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+
+<div class="container-fluid wrapper">
+
+    <div class="titlediv">
+        <h1 class="text-center">
+                <span>
+                    <img alt="Hangman" src="images/stickFigure.png" style="width: 100px ; height:150px">
+                </span>
+            Hangman
+        </h1>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-12 col-sm-push-0 col-md-10 col-md-push-1">
+
+            <div class="row center-block">
+                <div class="col-sm-4 col-sm-push-4 text-center center-block">
+                    <div class="panel text-center">
+                        <div class="row"><h4><b>Games Played:</b></h4>
+                            <div class="col-xs-4 col-md-3 col-lg-4"><h3 class="text-success text-center"><b>Won</b>
+                            </h3>
+                                <h3 id="gamesWon">0</h3>
+                            </div>
+                            <div class="col-xs-4 col-md-5 col-lg-4"><h3 class="text-center"><b>Unfinished</b></h3>
+                                <h3 id="gamesUnfinished">0</h3>
+                            </div>
+                            <div class="col-xs-4 col-lg-4"><h3 class="text-danger text-center"><b>Lost</b></h3>
+                                <h3 id="gamesLost">0</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="align-items: center;  display: flex; justify-content: center;">
+                <button id="startButton" value="init" class="btn btn-lg btn-primary " type="submit">
+                    <span><span class="glyphicon glyphicon-play"></span> Start Game</span>
+                </button>
+            </div>
+
+            <div>
+                <div class="panel" id="gameSpace">
+                </div>
+
+                <div style="text-align:center;" id="restartSpace">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--Footer-->
+<footer class="container-fluid footer">
+    <div class="row">
+        <hr>
+        <div class="col-xs-12">
+            <div class="col-xs-5 col-md-8">
+                <a href="../">Home</a> |
+                <a href="../portfolio.html">Portfolio</a> |
+                <a href="../contact.html">Contact</a>
+            </div>
+            <div class="col-xs-7 col-md-4">
+                <p class="muted pull-right">&copy; 2016 &emsp; Alberto Flores S.</p>
+            </div>
+        </div>
+    </div>
+    <!--</footer>-->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/index.js"></script>
+</footer>
+
+</body>
+
+</html>

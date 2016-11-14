@@ -5,12 +5,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
     </head>
     <body>
         <h1>Hello World!</h1>
         
-                <%
+        <%
             ConsumeWebService ws = new ConsumeWebService();
             String word = ws.getWord("http://localhost:8084/hangman/server/");
 
